@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  li {
+    @apply p-4 cursor-pointer;
+  }
+  button {
+    @apply text-white border bg-sky-600 border-white cursor-pointer
+     p-2 rounded-md m-2;
+  }
+  .hyperlink {
+    @apply p-4 cursor-pointer;
+  }
+}
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+.platform {
+  position: relative;
+  transition: right 0.3s;
+}
+
+.body {
+  background-color: white !important;
+}
