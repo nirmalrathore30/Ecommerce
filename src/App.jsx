@@ -5,6 +5,7 @@ import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import ForYou from "./pages/ForYou";
 import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
 import Products from "./pages/Products";
 import Today from "./pages/Today";
 import Store from "./redux/Store";
@@ -26,6 +27,10 @@ function App() {
         {
           path: "products",
           element: <Products />,
+        },
+        {
+          path: "productsdetail",
+          element: <ProductDetail />,
         },
         {
           path: "foryou",

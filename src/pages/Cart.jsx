@@ -15,7 +15,6 @@ const Cart = () => {
   const cartItems = useSelector(getAllCartItems);
   const isLoading = useSelector(getCartLoadingState);
   const error = useSelector(getCartError);
-  console.log("cartProducts: ", cartItems);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCartItemsData());
